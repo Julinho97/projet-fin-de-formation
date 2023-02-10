@@ -541,7 +541,8 @@
             height: auto;
             display: block;
             flex-direction: column;
-        }
+        } 
+       
     }
     
     @media (max-width: 920px) {
@@ -550,7 +551,6 @@
         }
         .about-img {
             text-align: center;
-            order: 2;
         }
         .about-img img {
             width: auto;
@@ -559,7 +559,11 @@
         }
         .contact {
             grid-template-columns: 1fr;
+        } 
+        .parco {
+            grid-template-columns: 1fr;
         }
+       
     }
     
     @media (max-width: 840px) {
@@ -593,24 +597,23 @@
         .navlist.open {
             top: 100%;
         }
-        .resume .func .work {
-            width: 57%;
-        }
-        .resume .func .edu {
-            width: 47%;
-        }
+        .parcours .resume ul {
+            width: auto;
+            height: auto;
+            display: block;            
+            order: 1;
+            font-size: 14px;   
+         }
+     
+ 
     }
     
     @media (max-width: 640px) {
         .home {
             background-image: url(../img/media.png);
+   
         }
-        .parcours .resume {
-            width: auto;
-            height: auto;
-            display: block;
-            flex-direction: column;
-        }
+      
     }
     /******* Fin media query   ********/
     /******* Competence  ********/
@@ -1131,7 +1134,7 @@
         text-align: center;
         vertical-align: middle;
         margin-right: 8px;
-        transition-duration: 0.3s;
+        transition-duration: 0.4s;
     }
     
     .resume .func .edu img,
@@ -1595,6 +1598,14 @@
         margin: 0 auto;
     }
     /* centre ds'interet */
+
+    .centre_interet {
+        position: relative;
+      
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
     
     .dd {
         position: relative;
@@ -1699,3 +1710,40 @@
         font-weight: 700;
         transition: 0.5s;
     }
+
+
+    
+    @media (max-width: 745px) {
+        .centre_interet {
+            position: relative;
+          
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dd {
+
+        position: relative;
+        display: block ;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 23vh;
+        height: 23vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        }
+        .dd .kk h2 {
+            color: #000;
+            
+            text-transform: uppercase;
+            font-size: 1em;
+            line-height: 1em;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+       
+        
+    }
+    
+  
